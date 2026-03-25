@@ -9,7 +9,7 @@
 body{
     font-family: "Arial";
     line-height: 1.6;
-    background-color: #ffffff;
+    background-color: #987777;
     color:rgb(0, 0, 0);
     padding: 20px;
 }
@@ -55,4 +55,62 @@ body{
 }
 .btn-dowload:hover{
     background-color: rgb(127, 189, 255);
+}
+
+
+/* Formatando inputs de formulário */
+input{
+    width: 300px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border:2px solid #555;
+    border-radius: 5px;
+    background-color: #3a3a38;
+    color:#ffffff;
+    font-size: 16px;
+    transition: border-color 0.5s ease, boxe-shadow 0.5s ease;
+}
+
+input:focus{
+    border-color: #8cc9e4;
+outline: none;
+box-shadow: 0 0 10px rgba(140,201,28,0.5);
+}
+
+/* seleionando uma inout pelo seu tipo */
+input[type="email"]{
+    background-color: #8cc9e4;
+    color:#0000;
+}
+
+/* citações personalizadas com befor e after */
+.citacao{
+    width: 720px;
+    position: relative;
+    padding: 30px 40px;
+    background-color: #3a3a38;
+    border-left: 5px solid #8cc9e4;
+    font-style: italic;
+    font-size: 20px;
+    margin: 60px 0;
+}
+
+.citacao::before{
+    content: ' " ';
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 80px;
+    color: #8cc9e4;
+    opacity: 0.3;
+}
+
+.citacao::after{
+    content: ' " ';
+    position: absolute;
+    top: -40px;
+    left: 90px;
+    font-size: 80px;
+    color: #8cc9e4;
+    opacity: 0.3;
 }

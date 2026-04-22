@@ -1,0 +1,41 @@
+    /* display block */
+    .block{
+        display:block;
+        width: 200px;
+        height: 50px;
+        background-color: lightcoral;
+        margin-bottom: 10px;
+        text-align: center;
+        line-height: 50px;
+    }
+    /* Caracteristicas do block:
+    -Ocupa toda a largura 
+    -Sempre quebra linhas
+    -Aceita largura (width) e aceita altura(height) */
+
+    /* Display inline */
+    .inline{
+        display:inline;
+        background-color: lightgreen;
+        padding: 10px;
+        margin: 10px;
+    }
+     /* Caracteristicas do inline:
+    -Não quebra linhas
+    -Ocupa apenas o espaço do conteúdo
+    -Não aceita largura (width) e altura(height) */
+
+    /* Display inline-block */
+    .inline-block{
+        display: inline-block;
+        background-color: lightblue;
+        margin: 10px;
+        text-align: center;
+        line-height: 50px;
+        width: 150px;
+        height: 150px;
+    }
+    /* Caractrísticas do inline-block:
+    -Fica na mesma linha
+    -Aceita largura(width) e altura(height)
+    -Muito usado em layouts e botões */

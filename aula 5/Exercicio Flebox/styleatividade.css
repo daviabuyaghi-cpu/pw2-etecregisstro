@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    /* GAP é o espaçamento entre os itens do flexbox */
+    /* gap:50px; */
+    /* Alinhando os intens no centro horizontal */
+    /* justify-content: center; */
+    background-color: #30302e;
+    padding:20px;
+    height: 300px;
+}
+.card{
+    background-color: #8cc9e4;
+    color:#30302e;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.row-end{
+    flex-direction: row;
+    justify-content:right;
+    align-items: flex-end;
+}
+
+.column{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-end{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.coluna-centro{
+    flex-direction: column;
+    align-items:center;
+    justify-content:center ;
+}
+
+.linha-centro{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+

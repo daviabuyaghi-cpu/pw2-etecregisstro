@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <h1>Dados:</h1>
+</head>
+<body>    
+</body>
+<script>
+    const nome = window.prompt("Digite seu nome");
+    document.write(`Seu nome é: ${nome} <br>`);
+
+    const idade = window.prompt("Digite seu idade");
+    document.write(`Seu nome é: ${idade} <br>`);
+
+    const cidade = window.prompt("Digite sua cidade");
+    document.write(`Você mora em: ${cidade.toUpperCase()} <br>`);
+
+    const salario = window.prompt("Digite seu salário");
+    const salarioDolar=salario*0.19;
+    document.write(`Salário em dólar: ${salarioDolar.toLocaleString('pt-br',{style:'currency', currency:'USD'})}`)
+
+</script>
+</html>

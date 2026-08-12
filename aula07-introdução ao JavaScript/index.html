@@ -1,42 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Introdução ao JavaScript</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Introdução ao JavaScript</h1>
     <p>Eu sou ..</p>
-    
-</body>
+  </body>
 
-<!-- Java Scripit Interno -->
- <script>
+  <!-- Java Scripit Interno -->
+  <script>
     //Aqui irá o código JavaScript
 
     //Declarando variáveis
     //VAR
-    var nome="Davi";
-    document.write(nome)
-    document.write('<br>')
-    nome="Italo";
-    document.write(nome)
+    // var nome = "Davi";
+    // document.write(nome);
+    // document.write("<br>");
+    //Solicitando dados ao usuário
+     var nome = window.prompt("Digite seu nome");
+    document.write(nome);
 
     //LET
-    let cidade="Registro";
+    let cidade = window.prompt("Digite sua cidade");
     //let cidade ="Pariquera'"-> Não é possivel
-    cidade="São Paulo";
-    document.write('<br>')
-    document.write("Eu moro em "+cidade+'<br>')
+    // cidade = "São Paulo";
+    document.write("<br>");
+    document.write("Eu moro em " + cidade + "<br>");
 
     //CONST
-    const idade=16;
+    const idade = Number( window.prompt("Digte sua idade"));
     //idade=17;
-    document.write("Tenho "+idade+ " anos"+'<br>')
+    document.write("Tenho " + idade + " anos" + "<br>");
     //const idade=18;
 
+    //Verificando tipos de variáveis
+    document.write("O tipo da variável nome é " + typeof nome + "<br>");
+    document.write("O tipo da variável idade é " + typeof idade + "<br>");
+    //O JavaScript atribui tipos de variaveis de forma dinamica
 
+    //Exibindo uma mensagem de alerta ao usuario
+    window.alert("Bem-vindo " + nome + " !");
 
- </script>
+    //Solicitando ao usuário dois números
+    const n1=Number (window.prompt("Digite um número"))
+    const n2=Number (window.prompt("Digite outro número"))
+    const soma=n1+n2
+    document.write(`O resultado da soma de ${n1} + ${n2} = ${soma}<br>`)
+
+    //Formatando Strings
+    document.write(`Seu nome em letras maiusculas é ${nome.toUpperCase()}<br>`)
+    document.write(`Seu nome em letras minusculas é ${nome.toLocaleLowerCase()}<br>`)
+
+    //Formatando numeros
+    const salario=2500
+    document.write(`Salario com casa decimais:${salario.toFixed(2)} <br>`)
+    document.write(`Salario com casa decimal em virgula:${salario.toFixed(2).replace('.',',')}<br>`)
+
+    //Formatação de moeda
+    //real
+    document.write(`Salário em real: ${salario.toLocaleString('pt-br',{style:'currency', currency:'BRL'})}<br>`)
+
+    //dolar
+    document.write(`Salário em dólar: ${salario.toLocaleString('pt-br',{style:'currency', currency:'USD'})}`)
+
+  </script>
 </html>

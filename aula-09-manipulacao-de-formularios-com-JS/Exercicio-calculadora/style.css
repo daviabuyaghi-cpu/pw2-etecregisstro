@@ -1,0 +1,39 @@
+body {
+    font: normal 18pt Arial;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    font: normal 18pt Arial;
+}
+
+input[type="number"] {
+    width: 120px;
+    text-align: center;
+}
+
+input[type="button"] {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+}
+
+input[value="LIMPAR"] {
+    width: 120px;
+    background-color: red;
+}
+
+input#resultado {
+    width: 300px;
+    text-align: center;
+}
+
+

@@ -51,5 +51,5 @@ function dividir(){
 function limpar(){
     inputN1.value = "";
     inputN2.value = "";
-    resultado.value = "";
+    resultado.innerHTML = "";
 }
